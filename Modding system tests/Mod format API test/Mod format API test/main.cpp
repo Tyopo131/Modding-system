@@ -10,6 +10,7 @@ int main(int argc, char* argv[]) {
 
 	// Early error handling + setup
 
+
 	namespace fs = std::filesystem;
 	if (argc != 4) {
 		std::cerr << "Invalid command-line arguments.\nUsage: [app].exe [dll]";
