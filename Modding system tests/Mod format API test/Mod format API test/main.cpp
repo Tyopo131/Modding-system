@@ -87,28 +87,28 @@ int main(int argc, char* argv[]) {
 	// Part three: Creating the mod file
 
 	// Part 3.1: Calculate sizes and positions
-	constexpr size_t identifierStartPos = 0;
+	constexpr uint64_t identifierStartPos = 0;
 
-	constexpr size_t identifierSize = 8;
-	constexpr size_t headerStartPos = 9;
+	constexpr uint64_t identifierSize = 8;
+	constexpr uint64_t headerStartPos = 8;
 
-	constexpr size_t headerEndPos = 9 + (4 * 4);
+	constexpr uint64_t headerEndPos = 8 + (8 * 4);
 
-	constexpr size_t headerSize = (4 * 4);
-	constexpr size_t dllStartPos = headerEndPos + 1;
+	constexpr uint64_t headerSize = (8 * 4);
+	constexpr uint64_t dllStartPos = headerEndPos;
 
-	const size_t jsonStartPos = headerEndPos + fileSize + 1;
-	const size_t jsonSize = jsonData.str().size();
+	const uint64_t jsonStartPos = headerEndPos + fileSize;
+	const uint64_t jsonSize = jsonData.str().size();
 	
 	
 	// ___________________________________________
 
 	std::ofstream outputFile(argv[3], std::ios::binary);
 	outputFile.write("msys-mod", identifierSize);
-	outputFile.write(reinterpret_cast<const char*>(&dllStartPos), 4);
-	outputFile.write(reinterpret_cast<const char*>(&fileSize), 4);
-	outputFile.write(reinterpret_cast<const char*>(&jsonStartPos), 4);
-	outputFile.write(reinterpret_cast<const char*>(&jsonSize), 4);
+	outputFile.write(reinterpret_cast<const char*>(&dllStartPos), 8);
+	outputFile.write(reinterpret_cast<const char*>(&fileSize), 8);
+	outputFile.write(reinterpret_cast<const char*>(&jsonStartPos), 8);
+	outputFile.write(reinterpret_cast<const char*>(&jsonSize), 8);
 	outputFile.write(dllData, fileSize);
 	outputFile.write(jsonData.str().c_str(), jsonData.str().size());
 	
