@@ -362,3 +362,5 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 /Modding system tests/Mod format API test/Mod format API test/myMod
+/Modding system tests/Mod format API test/Mod format API test/mod_thing.dll
+/Modding system tests/Mod format API test/Mod format API test/mod_thing.dll
