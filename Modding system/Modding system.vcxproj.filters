@@ -21,12 +21,12 @@
     <ClCompile Include="main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="encoder.cpp">
+    <ClCompile Include="encoder.cppm">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="encoder.h">
+    <ClInclude Include="mod_format.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
