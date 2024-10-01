@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.10.35004.147
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Multiple return types test", "Multiple return types test\Multiple return types test.vcxproj", "{03668177-5B52-4D71-820A-FB529A9722EB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Debug|x64.ActiveCfg = Debug|x64
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Debug|x64.Build.0 = Debug|x64
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Debug|x86.ActiveCfg = Debug|Win32
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Debug|x86.Build.0 = Debug|Win32
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Release|x64.ActiveCfg = Release|x64
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Release|x64.Build.0 = Release|x64
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Release|x86.ActiveCfg = Release|Win32
+		{03668177-5B52-4D71-820A-FB529A9722EB}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {713D7070-16AF-4A88-8F31-189D12558B7E}
+	EndGlobalSection
+EndGlobal
